@@ -1,0 +1,45 @@
+@value variables: '../../variables.module.css';
+@value color-dark-grey, primary-box-shadow from variables;
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  width: 280px;
+  border: 1px solid #015666;
+  border-radius: 5px;
+}
+
+.submitBtn {
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #04859d;
+  border: none;
+  border-radius: 5px;
+  box-shadow: primary-box-shadow;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 30px;
+  }
+  .input {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .heading {
+    font-size: 36px;
+  }
+}
